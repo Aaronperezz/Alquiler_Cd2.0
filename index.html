@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Control de Alquiler de DVD</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Control de Alquiler de DVD</h1>
+      <div class="movie-info">
+        <h2 id="titulo"></h2>
+        <p><strong>Año:</strong> <span id="anio"></span></p>
+        <p><strong>Duración:</strong> <span id="duracion"></span></p>
+        <p><strong>Precio Alquiler:</strong> $<span id="precio"></span></p>
+        <p><strong>Alquilada:</strong> <span id="alquilada"></span></p>
+        <p><strong>Último Usuario:</strong> <span id="ultimoUsuario"></span></p>
+      </div>
+      <div class="actions">
+        <input type="text" id="usuario" placeholder="Nombre del usuario" />
+        <button onclick="alquilar()">Alquilar</button>
+        <button onclick="devolver()">Devolver</button>
+        <button onclick="ultimoAlquiler()">Último Alquiler</button>
+      </div>
+      <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
